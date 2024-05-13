@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <title>Lab 2. Palamarchuk</title>
+</head>
+<body>
+    
+    <p><b><i>Завдання 1. Записати дане чотирицифрове натуральне число без середніх цифр, які замінені підкресленням:</i></b></p>
+    
+    <label for="numberInput">Введіть <b>чотирицифрове</b> число:</label>
+    <input type="number" id="numberInput">
+    <button onclick="hideAndShowHiddenNumber()">Показати число з прихованими цифрами</button>
+    <div id="result_1"></div>
+
+    
+    <p><b><i>Завдання 2. Ввести координати точок А(х0, у0) і В(х1, у1) і визначити яка з цих точок – А чи В – є найбільш віддалена від початку координат (О(0,0)):</i></b></p>
+
+    <label for="xA">Введіть координати точки A:</label><br>
+    X<sub>A</sub>: <input type="number" id="xA"><br>
+    Y<sub>A</sub>: <input type="number" id="yA"><br>
+
+    <label for="xB">Введіть координати точки B:</label><br>
+    X<sub>B</sub>: <input type="number" id="xB"><br>
+    Y<sub>B</sub>: <input type="number" id="yB"><br>
+
+    <button onclick="findMostDistantPoint()">Визначити найбільш віддалену точку</button>
+
+    <div id="result_2"></div>
+
+    
+    <p><b><i>Завдання 3. Знайти трицифрові числа та їх суму, які мають в своєму записі цифру d:</i></b></p>
+
+    <label for="digitInput">Введіть цифру d (0-9):</label>
+    <input type="number" id="digitInput" min="0" max="9"><br>
+    <button onclick="findNumbersAndCalculateSum()">Знайти трицифрові числа та їх суму</button>
+    <div id="result_3"></div>
+
+
+    <p><b><i>Завдання 4. Знайти числа паліндроми, квадрати яких також є паліндромами:</i></b></p>
+
+    <label for="start">Введіть початок діапазону пошуку:</label>
+    <input type="number" id="start" name="start">
+    <label for="end">Введіть кінець діапазону пошуку:</label>
+    <input type="number" id="end" name="end">
+    <button onclick="findPalindromeNumbers()">Знайти</button>
+    <div id="result_4"></div>
+
+</body>
+</html>
